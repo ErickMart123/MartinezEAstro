@@ -1,52 +1,41 @@
 ---
-
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import PageShowcase from "../components/PageShowcase.astro";
+import PageFeatures from "../components/PageFeatures.astro";
+import PageContent from "../components/PageContent.astro";
+import PageSemesters from "../components/PageSemesters.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme Build For Astro</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Theme Build For Astro</title>
 </head>
 <body>
+<!--
+pageheader
+showcase
+features
+pagecontent
+semesters
+pagefooter
+-->
+
+<PageHeader />
+
+<PageShowcase />
+
+<PageFeatures />
+
+<PageContent />
+
+
+<PageFooter />
+
+<PageSemesters />
 </body>
 </html>
-<style>
-	/* Media Queries */
-	@media only screen and (min-width:320px)
-	{
-		body{
-		background-color: magenta;
-		}
-	}
-	@media only screen and (min-width:480px)
-	{
-		body{
-			background-color: yellow;
-		}
-		
-	}
-	@media only screen and (min-width:768px)
-	{
-		body{
-			background-color: lime;
-		}
-
-	}
-	@media only screen and (min-width:1024px)
-	{
-		body{
-			background-color: coral;
-		}
-
-	}
-	@media only screen and (min-width:1200px)
-	{
-		body{
-			background-color: steelblue;
-		}
-
-	}
-</style>
