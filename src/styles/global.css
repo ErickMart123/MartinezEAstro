@@ -132,67 +132,253 @@ min-height: 7.0rem;
     color:#fff;
 }
 /* End of Header Section Styles */
+
+/*  Beginning of showcase Styles */
 #showcase {
-min-height: 200px;
-background-color: lightblue;
-padding: 1rem;
+border:.2rem solid none;
+background-color: var(--color-primary);
+padding: 3rem;
+background-image: linear-gradient(to bottom,var(--color-primary), var(--color-secondary));
+background-image: url(images/pond.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: bottom left;
 }
+#showcasetext
+{
+    border: .2rem solid none;
+    color: #fff;
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 60rem;
+}
+#showcase h1
+{
+    font-size: 5rem; /* 50 px */
+    margin-bottom: 2rem; /* 20px */
+    text-shadow: 0 0 1rem black;
+}
+#showcase blockquote
+{
+    font-size: 2.4 rem;
+    margin-bottom: 2rem;
+}
+#showcaseimage
+{
+    text-align: center;
+    /* Cheating */
+}
+#showcase img
+{
+    border-radius: 1rem;
+     margin: auto;
+}
+#showcaseintro 
+{
+    color: #fff;
+    text-align: center;
+    font-size:3rem;
+}
+/* Hide Big Logos/Technologies for Mobile */
+#logosbig
+{
+    display: none;
+}
+#logossmall
+{
+    width: 30rem;
+}
+/* End of Showcase Section Styles */
+
+/* Features Section */
 #features {
 min-height: 200px;
 background-color: aqua;
 padding: 1rem;
 }
-#pagecontent {
-min-height: 200px;
-background-color: lightgreen;
-padding: 1rem;
+#features .container
+{
+    padding-top:2rem ; 
+    background-color: burlywood;
+    border: 2px dashed red;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
 }
-#semesters {
-min-height: 200px;
-background-color: aquamarine;
-padding: 1rem;
+.card
+{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 1rem silver;
+    margin-bottom: 2rem;
+    border-radius: 2.5rem;
 }
-#pagefooter {
-min-height: 200px;
-background-color: cornflowerblue;
-padding: 1rem;
-}
+/* End Features Section Styles */
 
+/* Beginning of pagecontent */
+#pagecontent {
+    background: none;
+    padding: 2rem 0 2rem 0;
+}
+#pagecontent h2,h3
+{
+    padding: 2rem;
+}
+#pagecontent h2
+{
+    font-size: 4rem;
+}
+#pagecontent h3{
+    font-size: 2.5rem;
+}
+/* End page Content */
+
+/* Beginning of semesters  */
+#semesters 
+{
+padding:2rem 0 2rem 0;
+}
+#semesters h2, #semesters h3
+{
+    padding:2rem 0 2rem 0;
+}
+#semesters h2
+{
+    font-size:2.5rem;
+}
+.assignments a 
+{
+    color:#2d6858;
+}
+/* End Semesters Section */
+
+/* Semesters Thumbnail Section */
+.thumbnail
+{
+    background-color: burlywood;
+    border: 2px dashed red;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.thumb
+{
+    width: 150px;
+    height: 150px;
+}
+.thumb:hover
+{
+    animation-name:tilt ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes tilt
+{
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(-15deg);}
+}
+/* End Semesters Thumbnail Section Styles */
+
+/* Footer Section */
+#pagefooter {
+background-color: var(--color-primary);
+color: #fff;
+text-align: center;
+padding: 2rem;
+padding-top: 6rem;
+}
+#pagefooter .container
+{
+    background-color: chocolate;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#pagefooter a
+{
+    color:#fff;
+}
+#pagefooter a:hover
+{
+    color: #b7c1bf;
+}
+#pagefooter h3
+{
+   padding-bottom: 3rem;
+}
+#pagefooter #quote
+{
+    text-align: left;
+}
+#pagefooterlinks
+{
+    display: none;
+}
+/* End Footer Section */
 /* Media Queries */
-@media only screen and (min-width: 320px) {
-body {
-font-size: 1rem;
+@media only screen and (min-width: 320px) 
+{
+    #features
+    {
+        background-color: magenta;
+    }
 }
-#features {
-background-color: magenta;
+@media only screen and (min-width: 480px)
+{
+    #features
+    {
+        background-color: yellow;
+    }
 }
+@media only screen and (min-width:768px)
+{
+    #features
+    {
+        background-color: lime;
+    }
+    .card
+    {
+        flex-basis: 30%;
+    }
+    #features .container
+    {
+        flex-direction: row;
+    }
+    h1,h2
+    {
+        text-align: left;
+    }
+
+    }
+@media only screen and (min-width: 1024px)
+{
+    #features
+    {
+        background-color: coral;
+    }
+        #logosbig
+    {
+        display: block;
+        margin: auto;
+    }
+    #logossmall
+    {
+        display: none;
+    }
 }
-@media only screen and (min-width: 480px) {
-body {
-font-size: 1.4rem;
-}
-#features {
-background-color: yellow;
-}
-}
-@media only screen and (min-width: 768px) {
-body {
-font-size: 1.6rem;
-}
-#features {
-background-color: lime;
-}
-}
-@media only screen and (min-width: 1024px) {
-#features {
-background-color: coral;
-}
-}
-@media only screen and (min-width: 1200px) {
-body {
-font-size: 2rem;
-}
-#features {
-background-color: steelblue;
-}
-}
+@media only screen and (min-width: 1200px)
+    {
+    #features
+    {
+        background-color: steelblue;
+    }
+    #pagefooterlinks
+    {
+        display:block;
+    }
+    }
