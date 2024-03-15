@@ -79,21 +79,22 @@ li
 .container {
 background-color: white;
 min-height: 10rem;
-
+background-color: #B4D88C;
 max-width: 120rem;
 margin: auto;
 padding: 0rem 3rem 0rem 3rem;
+border: 2px dashed black;
 }
 
 #pageheader {
-background-color: var(--color-primary);
+background-color: rgb(112,164,211);
 min-height: 7.0rem;
+background-image: url(images/lego.png);
 }
 /* Special Header Container Styles */
 #pageheader .container
 {
-    background-color: aquamarine;
-    border: 2px dashed red;
+    background-color:#F6A80A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +103,7 @@ min-height: 7.0rem;
 }
 .logo img
 {
-    height: 6rem;
+    height: 9rem;
 }
 .logo:hover
 {
@@ -120,8 +121,8 @@ min-height: 7.0rem;
 /* Header Menu */
 #menu
 {
-    background-color: #f0ad4a;
-    border: 2px dashed red;
+    /* background-color: #f0ad4a;
+    border: 2px dashed red; */
     display: flex;
     justify-content: space-between;
     width: 20rem; /*200px */
@@ -138,9 +139,9 @@ min-height: 7.0rem;
 #showcase {
 border:.2rem solid none;
 background-color: var(--color-primary);
-padding: 3rem;
+padding: 15rem;
 background-image: linear-gradient(to bottom,var(--color-primary), var(--color-secondary));
-background-image: url(images/pond.png);
+background-image: url(images/dog.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -162,7 +163,7 @@ background-position: bottom left;
 }
 #showcase blockquote
 {
-    font-size: 2.4 rem;
+    font-size: 2.4rem;
     margin-bottom: 2rem;
 }
 #showcaseimage
@@ -172,7 +173,7 @@ background-position: bottom left;
 }
 #showcase img
 {
-    border-radius: 1rem;
+    border-radius: 2;
      margin: auto;
 }
 #showcaseintro 
@@ -201,8 +202,7 @@ padding: 1rem;
 #features .container
 {
     padding-top:2rem ; 
-    background-color: burlywood;
-    border: 2px dashed red;
+    background-color: #B4D88C;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -210,9 +210,9 @@ padding: 1rem;
 }
 .card
 {
-    background-color: #fff;
+    background-color: #9db581;
     padding: 2rem;
-    box-shadow: 0rem 0rem 1rem silver;
+    box-shadow: 0rem 0rem 1rem rgb(155, 35, 35);
     margin-bottom: 2rem;
     border-radius: 2.5rem;
 }
@@ -220,7 +220,7 @@ padding: 1rem;
 
 /* Beginning of pagecontent */
 #pagecontent {
-    background: none;
+    background-image: url(images/lego.png);
     padding: 2rem 0 2rem 0;
 }
 #pagecontent h2,h3
@@ -240,6 +240,7 @@ padding: 1rem;
 #semesters 
 {
 padding:2rem 0 2rem 0;
+background-image: url(images/lego.png);
 }
 #semesters h2, #semesters h3
 {
@@ -258,8 +259,8 @@ padding:2rem 0 2rem 0;
 /* Semesters Thumbnail Section */
 .thumbnail
 {
-    background-color: burlywood;
-    border: 2px dashed red;
+    background-color: #9db581;
+    border: 2px dashed black;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -268,8 +269,8 @@ padding:2rem 0 2rem 0;
 }
 .thumb
 {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 .thumb:hover
 {
@@ -286,7 +287,7 @@ padding:2rem 0 2rem 0;
 
 /* Footer Section */
 #pagefooter {
-background-color: var(--color-primary);
+background-color:#c4e999;
 color: #fff;
 text-align: center;
 padding: 2rem;
@@ -294,8 +295,7 @@ padding-top: 6rem;
 }
 #pagefooter .container
 {
-    background-color: chocolate;
-    border: 2px dashed red;
+    background-color:#9DB581;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -376,7 +376,7 @@ padding-top: 6rem;
     {
     #features
     {
-        background-color: steelblue;
+      background-image: url(images/lego.png);
     }
     #pagefooterlinks
     {
